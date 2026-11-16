@@ -2428,11 +2428,11 @@ html.paged .nav a[data-pgon]{background:#16191D!important;color:#fff!important;b
   var SMARTER = [
     { k: 'S', t: 'Specific', d: 'Programs, initiatives, workstreams', href: '#concept' },
     { k: 'M', t: 'Measurable', d: 'Gate 1 baselines, evidence, KPIs', href: '#concept' },
-    { k: 'A', t: 'Attainable', d: 'Staffing, cost, resources, dependencies', href: '#concept' },
+    { k: 'A', t: 'Achievable', d: 'Staffing, cost, resources, dependencies', href: '#concept' },
     { k: 'R', t: 'Relevant', d: 'BEACON, governance, RACI', href: '#concept' },
     { k: 'T', t: 'Time-bound', d: 'Gates, windows, constraints', href: '#concept' },
     { k: 'E', t: 'Evaluate', d: 'Results, assurance, benefit checks', href: '#concept' },
-    { k: 'R', t: 'Review', d: 'Decisions, actions, escalation', href: '#concept' }
+    { k: 'R', t: 'Readjust', d: 'Decisions, actions, escalation', href: '#concept' }
   ];
   (function () {
     var host = document.getElementById('smarterChart');
@@ -2440,7 +2440,7 @@ html.paged .nav a[data-pgon]{background:#16191D!important;color:#fff!important;b
     var t = tip(host);
     responsive(host, function (W) {
       var H = clamp(W, 300, 420);
-      var s = el('svg', { viewBox: '0 0 ' + W + ' ' + H, width: W, height: H, class: 'chart', role: 'img', 'aria-label': 'SMARTER cycle: Specific, Measurable, Attainable, Relevant, Time-bound, Evaluate, Review. Each step links to its chapter of the operating plan.' }, host);
+      var s = el('svg', { viewBox: '0 0 ' + W + ' ' + H, width: W, height: H, class: 'chart', role: 'img', 'aria-label': 'SMARTER cycle: Specific, Measurable, Achievable, Relevant, Time-bound, Evaluate, Readjust. Each step links to its chapter of the operating plan.' }, host);
       var cx = W / 2, cy = H / 2 + 4;
       var R = Math.min(W, H) / 2 - 58;
       var showLabels = W >= 390;
@@ -2611,7 +2611,7 @@ html.paged .nav a[data-pgon]{background:#16191D!important;color:#fff!important;b
       shares: [
         { pct: 35, name: 'Faculty affairs advising', color: '#A51C30', text: 'Reporting for appointments, promotions, and reviews. Primary technical advisor to 50+ department chairs, with materials for FAS deans, visiting committees, and the Office of the Governing Boards, including Visiting Committee packets with 20-year faculty trend series benchmarked FAS to division to department. Wrote the back-end pull reports in SQL, Python, R and Crystal Reports for ad-hoc requests from 50+ departments.' },
         { pct: 25, name: 'Appointments and promotions', color: '#6E1020', text: 'Redesigned appointment and promotion workflows, and supported faculty searches and offer letters.' },
-        { pct: 25, name: 'DataHub pilot and sponsored research', color: '#2B5C8A', text: 'Piloted the FAS DataHub (Oracle BI / HART), joining FAS sources including Finance with external benchmarks such as IPEDS, COFHE and Ivy Plus, a team effort that used my reports as its blueprint, serving FAS Finance, the Office of the Governing Boards, the Graduate School and Harvard College; GMAS reports joined to faculty and finance, in an FAS operation of more than $1 billion a year with 20+ years of longitudinal data. Moved self-service reporting from APEX to HART, from one office to deans, chairs and department administrators. Ad hoc requests fell from about 300–400 a year to under 100.' },
+        { pct: 25, name: 'DataHub pilot and sponsored research', color: '#2B5C8A', text: 'Piloted the FAS DataHub (Oracle BI / HART), joining FAS sources including Finance with external benchmarks such as IPEDS, COFHE and Ivy Plus, a team effort that used my reports as its blueprint, serving FAS Finance, the Office of the Governing Boards, the Graduate School and Harvard College; GMAS reports joined to faculty and finance, with 20+ years of longitudinal data. Moved self-service reporting from APEX to HART, from one office to deans, chairs and department administrators. Ad hoc requests fell from about 300–400 a year to under 100.' },
         { pct: 15, name: 'Team leadership', color: '#2F6B4F', text: 'Priorities and quality control for the FAS Faculty DataHub pilot, with source-to-target tie-outs and documented assumptions.' }
       ]
     },
@@ -3048,7 +3048,7 @@ html.paged .nav a[data-pgon]{background:#16191D!important;color:#fff!important;b
 const dlg=document.getElementById('ic-method-dialog'),body=document.getElementById('ic-method-dialog-body'),title=document.getElementById('ic-method-dialog-title');
 if(!dlg||!body||!title)return;
 const records={
-smarter:{name:'SMARTER · Plan & Measure',desc:'A decision and execution discipline—not another institutional program.',items:['Specific — define stewardship scope and audience','Measurable — agree evidence, baselines and indicators','Attainable — match work to capacity and access','Relevant — align with donor intent and university purpose','Time-bound — set milestones and review cadence','Evaluate — examine quality, usefulness and follow-up','Review — record decisions and improve the next cycle'],href:'./program-office.html#start',cta:'See delivery planning'},
+smarter:{name:'SMARTER · Plan & Measure',desc:'A decision and execution discipline—not another institutional program.',items:['Specific — define stewardship scope and audience','Measurable — agree evidence, baselines and indicators','Achievable — match work to capacity and access','Relevant — align with donor intent and university purpose','Time-bound — set milestones and review cadence','Evaluate — examine quality, usefulness and follow-up','Readjust — record decisions and improve the next cycle'],href:'./program-office.html#start',cta:'See delivery planning'},
 gate:{name:'Six-Check Release Gate · Verify & Authorize',desc:'A proposed evidence and authorization checkpoint. Missing approval means HOLD.',items:['Intent — the use matches the gift agreement','Reconciliation — amounts agree with authorized sources','Consent — narratives and imagery are permitted','Traceability — material claims have a source and owner','Attribution — outcomes are described without overclaiming','Authorization — a permitted human reviewer approves release'],href:'./playbook.html#start',cta:'See release procedures'},
 veritas:{name:'VERITAS · Communicate & Engage',desc:'A proposed donor narrative mnemonic—not an official expansion of Harvard’s motto.',items:['Vision — purpose and institutional mission','Experience — human or program context, with consent','Results — verifiable outcomes','Investment — accurate financial stewardship','Truth — traceable, appropriately qualified claims','Advancement — how the work moves the mission forward','Stewardship — gratitude, relationship and next steps'],href:'./communications.html',cta:'Explore communication examples'}};
 let previous=null;
@@ -3118,11 +3118,11 @@ var G=[
  // ---- SMARTER (planning frame)
  ['s-1',{g:'SMARTER · 1 of 7',t:'Specific',s:[['What we set','Purpose, audience, owner and scope.'],['Stewardship example','Annual endowed-fund reports for one unit, with a named owner, for fund holders.']]}],
  ['s-2',{g:'SMARTER · 2 of 7',t:'Measurable',s:[['What we set','Baseline, KPIs, evidence and quality.'],['Stewardship example','On-time rate, reconciliation exceptions and donor response, each with a baseline.']]}],
- ['s-3',{g:'SMARTER · 3 of 7',t:'Attainable',s:[['What we set','Capacity, budget, data and approvals.'],['Stewardship example','Reports tiered as templated, personalized or bespoke to fit team capacity.']]}],
+ ['s-3',{g:'SMARTER · 3 of 7',t:'Achievable',s:[['What we set','Capacity, budget, data and approvals.'],['Stewardship example','Reports tiered as templated, personalized or bespoke to fit team capacity.']]}],
  ['s-4',{g:'SMARTER · 4 of 7',t:'Relevant',s:[['What we set','Mission, donor intent, stewardship and risk.'],['Stewardship example','Every report tied to the gift intent and the priority it supports.']]}],
  ['s-5',{g:'SMARTER · 5 of 7',t:'Time-bound',s:[['What we set','Milestones, dates and review cadence.'],['Stewardship example','A reporting calendar with milestones and a monthly review.']]}],
  ['s-6',{g:'SMARTER · 6 of 7',t:'Evaluate',s:[['What we set','Usefulness, quality, timeliness and response.'],['Stewardship example','After each cycle, review timeliness, quality and donor response.']]}],
- ['s-7',{g:'SMARTER · 7 of 7',t:'Review',s:[['What we set','Continue, adapt, scale or stop.'],['Stewardship example','Decide what changes in the next cycle, and record why.']]}],
+ ['s-7',{g:'SMARTER · 7 of 7',t:'Readjust',s:[['What we set','Continue, adapt, scale or stop.'],['Stewardship example','Decide what changes in the next cycle, and record why.']]}],
  // ---- Release SOP (eight checkpoints)
  ['p-1',{g:'Release SOP · checkpoint 1 of 8',t:'Intake & Scope',s:[['What is checked','Audience, purpose, deadline and owner.'],['Automation’s part','The request creates the record and the due date.'],['Who signs','Stewardship lead.']]}],
  ['p-2',{g:'Release SOP · checkpoint 2 of 8',t:'Gift Intent & Constraints',s:[['What is checked','Gift terms, restrictions and donor preferences.'],['Automation’s part','Pulls gift-agreement terms and preferences into the brief.'],['Who signs','Gift officer and stewardship lead.']]}],
